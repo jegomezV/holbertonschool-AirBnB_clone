@@ -17,20 +17,13 @@ ________________________________________
 
 ## **Usage**
 ./console.py
-
 <code>(hbnb) <code>help
-
 <code>Documented commands (type help <topic>):
 <code>======================================== 
-
 <code>EOF  help  quit
-
 <code>(hbnb)
-
 <code>(hbnb)                                      </code>
-
 <code>(hbnb) quit                                 </code>
-
 <code>$                                           </code>
 
 ________________________________________
