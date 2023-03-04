@@ -45,7 +45,22 @@ ________________________________________
 | <code>all   | Display all objects in class  | <code>user.all    |
 | <code>show  | Retrieve an object from a file | <code>user.show |
 | <code>destroy  | Destroy specified object |  <code>User.destroy('123') |
-| <code> quit | Exits     | <code> quit    |
+| <code> quit | Close the console | <code> quit|
+________________________________________
+
+
+## **Models**
+
+| File | Description | Attributes |
+| :---         |     :---:      |          ---: |
+| <code>base_model.py  | 	BaseModel class for all the sub-classes  | <code>id, created_at, updated_at     |
+| <code>user.py | User class for user information.  | <code>email, password, first_name, last_name<code> |
+| <code>amenity.py | Amenity class for information about amenities.|<code>name|
+| <code>city.py   | City class for information about the city.  | <code>state_id, name    |
+| <code>state.py  | State class for information about the state. | <code>name |
+| <code>place.py | Place class for details of the AirBnB apartments for rent. |  <code>city_id, user_id, name, description, number_rooms, number_bathrooms, max_guest, price_by_night, latitude, longitude, amenity_ids |
+| <code> review.py | Review class for review information from the user/client. | <code> place_id, user_id, text|
+
 
 
 
