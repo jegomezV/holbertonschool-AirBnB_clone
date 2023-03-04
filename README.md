@@ -6,16 +6,22 @@ ________________________________________
 *In this project we will develop a simple copy of the [AirBnB](https://www.airbnb.com.co/) website, starting now until the end of the first year. In this first part we developed the console.*
 ________________________________________
 
-## **The console**
+## **The console Description** 
+Command interpreter based in cmd to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)**
 
-________________________________________
+
 - Create our data model
 - Manage (create, update, destroy, etc) objects via a console/command interpreter
-- Store and persist objects to a file (JSON file)
+- Store and persist objects to a file (JSON file).
+
+The first piece is to manipulate a powerful storage system. This storage engine will give us an abstraction between "My object" and "How they are stored and persisted". This means: from your console code (the command interpreter itself) and from the front-end and RestAPI you will build later, you won’t have to pay attention (take care) of how your objects are stored.
+
+This abstraction will also allow you to change the type of storage easily without updating all of your codebase. The console will be a tool to validate this storage engine.
 ________________________________________
 
 ## **Usage**
-````./console.py
+````
+./console.py
 
 (hbnb) help
 
@@ -60,13 +66,24 @@ ________________________________________
 | <code>state.py  | State class for information about the state. | <code>name |
 | <code>place.py | Place class for details of the AirBnB apartments for rent. |  <code>city_id, user_id, name, description, number_rooms, number_bathrooms, max_guest, price_by_night, latitude, longitude, amenity_ids |
 | <code> review.py | Review class for review information from the user/client. | <code> place_id, user_id, text|
-
+________________________________________
 ## **How to Install** 
-Clone [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) repositoy.
+### Clone the repository in [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) link or copy the text bellow.
 
-<code> git@github.com:jegomezV/holbertonschool-AirBnB_clone.git </code>
+```` 
+git@github.com:jegomezV/holbertonschool-AirBnB_clone.git
+````
+________________________________________
 
+### **Testing**
+Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
 
+````
+$ python3 unittest -m discover tests
+````
+````
+$ python3 unittest -m tests/test_console.py
+````
 
 
 
