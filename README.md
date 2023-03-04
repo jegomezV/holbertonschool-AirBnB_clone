@@ -66,14 +66,14 @@ ________________________________________
 | <code> review.py | Review class for review information from the user/client. | <code> place_id, user_id, text|
 ________________________________________
 ## **How to Install** 
-### Clone the repository in [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) link or copy the text bellow.
+## Clone the repository in [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) link or copy the text bellow.
 
 ```` 
 git@github.com:jegomezV/holbertonschool-AirBnB_clone.git
 ````
 ________________________________________
 
-### **Testing**
+## **Testing**
 Unittests for the HolbertonBnB project are defined in the tests folder. To run the entire test suite simultaneously, execute the following command:
 
 ````
@@ -82,8 +82,9 @@ $ python3 unittest -m discover tests
 ````
 $ python3 unittest -m tests/test_console.py
 ````
+________________________________________
 
+## **Authors**
+- [Cristhian Andres Jurado](https://github.com/Chrs-creyk)
 
-
-
-
+- [Juan Eduardo Gomez](https://github.com/jegomezV)
