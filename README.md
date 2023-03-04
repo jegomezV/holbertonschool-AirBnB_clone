@@ -1,7 +1,6 @@
-# **AirBnB clone - The console**
-________________________________________
+<p align="center"> 
 <img src="https://github.com/jegomezV/holbertonschool-AirBnB_clone/blob/master/hbnbnn%20creyk.png?raw=true">
-
+</p>
 
 *In this project we will develop a simple copy of the [AirBnB](https://www.airbnb.com.co/) website, starting now until the end of the first year. In this first part we developed the console.*
 ________________________________________
