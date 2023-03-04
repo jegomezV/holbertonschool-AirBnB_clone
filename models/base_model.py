@@ -87,3 +87,4 @@ class BaseModel:
         dicts["created_at"] = self.created_at.isoformat()
         dicts["updated_at"] = self.updated_at.isoformat()
         dicts["__class__"] = type(self).__name__
+
