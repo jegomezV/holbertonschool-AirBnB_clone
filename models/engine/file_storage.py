@@ -76,6 +76,6 @@ class FileStorage:
         if path.exists(filename):
             with open(filename, "r", encoding="utf-8") as f:
                 load = json.load(f)
-            for k, v in load.items():
-                suma = eval(v["__class__"])(**v)
-                FileStorage.__objects[k] = suma
+            for key, value in load.items():
+                suma = eval(value["__class__"])(**value)
+                FileStorage.__objects[key] = suma
