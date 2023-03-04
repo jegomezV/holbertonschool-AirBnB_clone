@@ -74,7 +74,7 @@ class FileStorage:
         """
         filename = FileStorage.__file_path
         if path.exists(filename):
-            with open(filename, "r") as f:
+            with open(filename, "r", encoding="utf-8") as f:
                 load = json.load(f)
             for k, v in load.items():
                 suma = eval(v["__class__"])(**v)
