@@ -14,8 +14,7 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb) "
     file = None
-    classes =\
-        ["BaseModel", "User", "Place", "State", "City", "Amenity", "Review"]
+    classes = ["BaseModel", "User", "Place", "State", "City", "Amenity", "Review"]
 
     def do_quit(self, line):
         """Quit command to exit the program"""
@@ -84,7 +83,6 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
         else:
             print("** no instance found **")
-
 
     def do_all(self, line):
         """Prints all string representation of all instances
