@@ -34,9 +34,9 @@ class FileStorage:
     __file_path = "file.json"
     __objects = {}
     """
-    -La cadena "file.json" se usa como nombre de archivo predeterminado
-    para almacenar objetos serializados en formato JSON.
-    El archivo es específico para la aplicación y permite identificar fácilmente los objetos almacenados.
+    -The string "file.json" is used as the default filename for storing serialized objects in JSON format.
+    for storing serialized objects in JSON format.
+    The file is specific to the application and allows easy identification of the stored objects.
     """
     def all(self):
         """
@@ -47,8 +47,8 @@ class FileStorage:
 
     def new(self, obj):
         """
-        -This method adds a new object to the dictionary of
-        objects stored in the JSON file.
+        -this method create a key with the
+        class and the id of the object.
         """
         if obj:
             key = type(obj).__name__ + "." + obj.id
@@ -56,7 +56,8 @@ class FileStorage:
 
     def save(self):
         """
-        -This method loads the dictionary of objects from the JSON file.
+        -this method serialize a dict and
+        the write a in file .json
         """
         dic = {}
         for k, v in FileStorage.__objects.items():
