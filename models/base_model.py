@@ -59,7 +59,7 @@ class BaseModel:
         '''
         return "[{}] ({}) {} ".format(type(self).__name__, self.id, self.__dict__)
 
-    def save(self) -> None:
+    def save(self):
         '''
         save() method ->
         -This method updates the date and time, and then formats it to Json.
@@ -67,7 +67,7 @@ class BaseModel:
         self.update_at = datetime.now()
         models.storage.save()
 
-    def to_dict(self) -> dict:
+    def to_dict(self):
         '''
         to_dict() method ->
         -This method returns a dictionary representation of the instance.
