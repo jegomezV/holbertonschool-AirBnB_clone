@@ -62,7 +62,9 @@ ________________________________________
 | <code> review.py | Review class for review information from the user/client. | <code> place_id, user_id, text|
 
 ## **How to Install** 
-Clone the repositoy in [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) link
+Clone [this](https://github.com/jegomezV/holbertonschool-AirBnB_clone) repositoy.
+
+<code> git@github.com:jegomezV/holbertonschool-AirBnB_clone.git </code>
 
 
 
