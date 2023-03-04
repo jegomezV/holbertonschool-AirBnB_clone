@@ -5,6 +5,7 @@
 from models.base_model import BaseModel
 import os.path as path
 import json
+import os
 
 
 class FileStorage:
@@ -37,14 +38,11 @@ class FileStorage:
             json.dump(dic, f)
 
     def reload(self):
-        """ deserialize the file json
-        with load y and returns to make
-        a update with all objects
+        """Deserializes the JSON file to __objects
         """
-        filename = FileStorage.__file_path
-        if path.exists(filename):
-            with open(filename, "r") as f:
-                load = json.load(f)
-            for k, v in load.items():
-                suma = eval(v["__class__"])(**v)
-                FileStorage.__objects[k] = suma
+        if os.path.exists(FileStorage.__file_path):
+            with open(FileStorage.__file_path, "r") as file:
+                deseria = json.load(file)
+            for key, value in deseria.items():
+                objd = eval(value["__class__"])(**value)
+                FileStorage.__objects[key] = objd
