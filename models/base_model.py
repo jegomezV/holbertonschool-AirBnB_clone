@@ -23,14 +23,14 @@ class BaseModel:
     "[<<class name>] (<instance.id>) <attr.dict>".
     --------------------------------------------->
 
-    Instance methods:
+    °Instance methods:
         Public:
             - save(self)
             - to_dict(self)
-    Special method:
+    °Special method:
         - __init__(self)
         - __str__(self)
-    Instance attributes:
+    °Instance attributes:
         Public:
             - id
             - created_at
@@ -38,7 +38,7 @@ class BaseModel:
     '''
     def __init__(self, *args, **kwargs):
         '''
-        The __init__ method instantiates a new object of the BaseModel class.
+        -The __init__ method instantiates a new object of the BaseModel class.
         It checks if any arguments are passed and sets the corresponding attributes.
         If no arguments are provided, it generates a new UUID,
         sets the created_at and updated_at attributes to the current date and time, respectively.
@@ -59,7 +59,7 @@ class BaseModel:
         '''
         __str__ method ->
 
-        This method returns the instance created in string format:
+        -This method returns the instance created in string format:
         "[<<class name>] (<instance.id>) <attr.dict>".
         '''
         return "[{}] ({}) {} ".format(type(self).__name__, self.id, self.__dict__)
@@ -68,7 +68,7 @@ class BaseModel:
         '''
         save() method ->
 
-        his method updates the date and time, and then formats it to Json.
+        -This method updates the date and time, and then formats it to Json.
         '''
         self.update_at = datetime.now()
         models.storage.save()
@@ -77,7 +77,7 @@ class BaseModel:
         '''
         to_dict() method ->
 
-        This method returns a dictionary representation of the instance.
+        -This method returns a dictionary representation of the instance.
         The dictionary includes all of the instance's attributes,
         as well as the class name, created_at, and updated_at attributes.
         The created_at and updated_at attributes are formatted as ISO 8601

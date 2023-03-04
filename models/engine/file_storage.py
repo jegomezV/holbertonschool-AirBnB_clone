@@ -1,6 +1,10 @@
-# coding=utf-8
 #!/usr/bin/python3
-"""Module for Filestorage class
+"""
+-> It tells the operating system which program to use to execute the file.
+
+Module ->
+
+This module contains the FileStorage class.
 """
 from models.base_model import BaseModel
 import os.path as path
@@ -8,27 +12,51 @@ import json
 
 
 class FileStorage:
-    """ serializes instances to a JSON file
-    and deserializes JSON file to instances:
     """
+    FileStorage Class ->
+
+    -This class allows us to open a dictionary with "all" thanks to its own method.
+    It is also in charge of the serialization and deserialization of the created instances,
+    which inherit the attributes of the "BaseModel" class in Json format.
+    --------------------------------------------->
+
+    °Instance methods:
+        public:
+            -all(self)
+            -new()
+            -save(self)
+            -reload(self)
+    °Instance class attributes:
+        private:
+            - __file_path
+            - __objects
+    """ 
     __file_path = "file.json"
     __objects = {}
-
+    """
+    La cadena "file.json" se usa como nombre de archivo predeterminado
+    para almacenar objetos serializados en formato JSON.
+    El archivo es específico para la aplicación y permite identificar fácilmente los objetos almacenados.
+    """
     def all(self):
-        """return a dictionary with all objects
+        """
+        This method returns a dictionary containing all of
+        the objects stored in the JSON file.
         """
         return FileStorage.__objects
 
     def new(self, obj):
-        """this method create a key with the
-        class and the id of the object"""
+        """
+        This method adds a new object to the dictionary of
+        objects stored in the JSON file.
+        """
         if obj:
             key = type(obj).__name__ + "." + obj.id
             FileStorage.__objects[key] = obj
 
     def save(self):
-        """this method serialize a dict and
-        the write a in file .json
+        """
+        This method loads the dictionary of objects from the JSON file.
         """
         dic = {}
         for k, v in FileStorage.__objects.items():
@@ -37,14 +65,8 @@ class FileStorage:
             json.dump(dic, f)
 
     def reload(self):
-        """ deserialize the file json
+        """
+        deserialize the file json
         with load y and returns to make
         a update with all objects
         """
-        filename = FileStorage.__file_path
-        if path.exists(filename):
-            with open(filename, "r") as f:
-                load = json.load(f)
-            for k, v in load.items():
-                suma = eval(v["__class__"])(**v)
-                FileStorage.__objects[k] = suma
