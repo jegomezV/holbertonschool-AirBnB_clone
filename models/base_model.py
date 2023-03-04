@@ -55,7 +55,7 @@ class BaseModel:
             self.updated_at = datetime.now()
             models.storage.new(self)
 
-    def __str__(self) -> str:
+    def __str__(self):
         '''
         __str__ method ->
 
@@ -64,7 +64,7 @@ class BaseModel:
         '''
         return "[{}] ({}) {} ".format(type(self).__name__, self.id, self.__dict__)
 
-    def save(self) -> None:
+    def save(self):
         '''
         save() method ->
 
