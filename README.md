@@ -7,7 +7,7 @@ ________________________________________
 ________________________________________
 
 ## **The console Description** 
-Command interpreter based in cmd to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)**
+Command interpreter based in cmd to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)
 
 
 - Create our data model
