@@ -5,7 +5,7 @@
 *In this project we will develop a simple copy of the [AirBnB](https://www.airbnb.com.co/) website, starting now until the end of the first year. In this first part we developed the console.*
 ________________________________________
 
-## **The console Description** 
+## **The console description** 
 Command interpreter based in cmd to manipulate data without a visual interface, like in a Shell (perfect for development and debugging)
 
 
