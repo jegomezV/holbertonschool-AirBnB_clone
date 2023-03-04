@@ -16,21 +16,20 @@ ________________________________________
 ________________________________________
 
 ## **Usage**
-<code>$ ./console.py
-(hbnb) 
-<code>
-<code>Documented commands (type help <topic>):
-<code>
-<code>========================================
-<code>
-<code>EOF  help  quit
-<code>
-<code>(hbnb)
-<code>(hbnb)
-<code>(hbnb) quit
-<code>
-<code>$
-</code>
+<code>$ ./console.py</code>
+(hbnb) </code>
+<code></code>
+<code>Documented commands (type help <topic>):</code>
+<code></code>
+<code>========================================</code>
+<code></code>
+<code>EOF  help  quit</code>
+<code></code>
+<code>(hbnb)</code>
+<code>(hbnb)</code>
+<code>(hbnb) quit</code>
+<code></code>
+<code>$</code>
 
 They should pass in non-interactive mode: <code>$ echo "python3 -m unittest discover tests" | bash</code>
 ________________________________________
