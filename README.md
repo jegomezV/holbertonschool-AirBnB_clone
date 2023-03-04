@@ -61,6 +61,9 @@ ________________________________________
 | <code>place.py | Place class for details of the AirBnB apartments for rent. |  <code>city_id, user_id, name, description, number_rooms, number_bathrooms, max_guest, price_by_night, latitude, longitude, amenity_ids |
 | <code> review.py | Review class for review information from the user/client. | <code> place_id, user_id, text|
 
+## **How to Install** 
+Clone the repositoy in (this)[git@github.com:jegomezV/holbertonschool-AirBnB_clone.git] link
+
 
 
 
