@@ -45,7 +45,7 @@ class BaseModel:
         '''
         if kwargs:
             for key, value in kwargs.items():
-                if key not in ["__class__"]:
+                if key != "__class__":
                     setattr(self, key, value)
                 if key == "created_at" or  key == "updated_at":
                     setattr(self, key, datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f"))
@@ -55,7 +55,7 @@ class BaseModel:
             self.updated_at = datetime.now()
             models.storage.new(self)
 
-    def __str__(self):
+    def __str__(self) -> str:
         '''
         __str__ method ->
 
@@ -64,7 +64,7 @@ class BaseModel:
         '''
         return "[{}] ({}) {} ".format(type(self).__name__, self.id, self.__dict__)
 
-    def save(self):
+    def save(self) -> None:
         '''
         save() method ->
 
@@ -73,7 +73,7 @@ class BaseModel:
         self.update_at = datetime.now()
         models.storage.save()
 
-    def to_dict(self):
+    def to_dict(self) -> dict:
         '''
         to_dict() method ->
 
