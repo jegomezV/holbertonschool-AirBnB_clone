@@ -72,7 +72,7 @@ class BaseModel:
 
         -This method updates the date and time, and then formats it to Json.
         '''
-        self.update_at = datetime.now()
+        self.updated_at = datetime.now()
         models.storage.save()
 
     def to_dict(self) -> dict:
