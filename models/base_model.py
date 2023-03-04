@@ -62,7 +62,9 @@ class BaseModel:
         -This method returns the instance created in string format:
         "[<<class name>] (<instance.id>) <attr.dict>".
         '''
-        return "[{}] ({}) {} ".format(type(self).__name__, self.id, self.__dict__)
+        name = type(self).__name__
+        dic = self.__dict__
+        return "[{}] ({}) {} ".format(name, self.id, dic)
 
     def save(self) -> None:
         '''
