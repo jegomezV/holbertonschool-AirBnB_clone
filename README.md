@@ -27,11 +27,11 @@ ________________________________________
 
 <code>(hbnb)
 
-<code>(hbnb)
+<code>(hbnb)                                      </code>
 
-<code>(hbnb) quit
+<code>(hbnb) quit                                 </code>
 
-<code>$
+<code>$                                           </code>
 
 ________________________________________
 
