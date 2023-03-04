@@ -37,9 +37,12 @@ They should pass in non-interactive mode: <code>$ echo "python3 -m unittest disc
 ________________________________________
 
 ## **How to use it**
+<thead>
+<tr>
+<th>File</th><th>Description</th></th>Attributes</th>
+</tr>
+</thead>
 
-<table>
-File Description Attributes                                </table>
 
 
 
