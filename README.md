@@ -1,1 +1,1 @@
-<img src="/jegomezV/holbertonschool-AirBnB_clone/blob/master/hbnbnn%20creyk.png" alt="" style="max-width: 100%;">
+<img src="[/jegomezV/holbertonschool-AirBnB_clone/blob/master/hbnbnn%20creyk.png](https://github.com/jegomezV/holbertonschool-AirBnB_clone/blob/master/hbnbnn%20creyk.png?raw=true)" alt="" style="max-width: 100%;">
