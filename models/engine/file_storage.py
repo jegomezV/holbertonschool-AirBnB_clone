@@ -61,8 +61,8 @@ class FileStorage:
         the write a in file .json
         """
         dic = {}
-        for k, v in FileStorage.__objects.items():
-            dic[k] = v.to_dict()
+        for key, value in FileStorage.__objects.items():
+            dic[key] = value.to_dict()
         with open(FileStorage.__file_path, "w") as f:
             json.dump(dic, f)
 
@@ -74,8 +74,8 @@ class FileStorage:
         """
         filename = FileStorage.__file_path
         if path.exists(filename):
-            with open(filename, "r", encoding="utf-8") as f:
+            with open(filename, "r") as f:
                 load = json.load(f)
-            for k, v in load.items():
-                suma = eval(v["__class__"])(**v)
-                FileStorage.__objects[k] = suma
+            for key, value in load.items():
+                suma = eval(value["__class__"])(**value)
+                FileStorage.__objects[key] = suma
