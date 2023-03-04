@@ -48,8 +48,7 @@ class BaseModel:
                 if key not in ["__class__"]:
                     setattr(self, key, value)
                 if key == "created_at" or  key == "updated_at":
-                    form = '%Y-%m-%dT%H:%M:%S.%f'
-                    setattr(self, key, datetime.datetime.strptime(value, form))
+                    setattr(self, key, datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f"))
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
@@ -88,4 +87,4 @@ class BaseModel:
         dicts["created_at"] = self.created_at.isoformat()
         dicts["updated_at"] = self.updated_at.isoformat()
         dicts["__class__"] = type(self).__name__
-
+        return dicts
