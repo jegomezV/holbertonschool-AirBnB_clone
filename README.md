@@ -18,18 +18,18 @@ ________________________________________
 ## **Usage**
 <code>$ ./console.py
 (hbnb) 
-
-Documented commands (type help <topic>):
-
-========================================
-
-EOF  help  quit
-
-(hbnb)
-(hbnb)
-(hbnb) quit
-
-$
+<code>
+<code>Documented commands (type help <topic>):
+<code>
+<code>========================================
+<code>
+<code>EOF  help  quit
+<code>
+<code>(hbnb)
+<code>(hbnb)
+<code>(hbnb) quit
+<code>
+<code>$
 </code>
 
 They should pass in non-interactive mode: <code>$ echo "python3 -m unittest discover tests" | bash</code>
