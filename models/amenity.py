@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-"""
-Amenity class
-"""
+""" Module holds class Amenity that inherits from BaseModel """
 from models.base_model import BaseModel
 
 
 class Amenity(BaseModel):
-    """
-    class Amenity
+    """this is a class for the amenity
+    of the page
     """
     name = ""
