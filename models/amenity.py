@@ -10,3 +10,7 @@ class Amenity(BaseModel):
     """
 
     name = ""
+
+
+
+("archivo.json", "w")
