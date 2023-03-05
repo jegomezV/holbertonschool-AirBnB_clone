@@ -41,9 +41,11 @@ class BaseModel:
         '''
         -The __init__ method
         instantiates a new object of the BaseModel class.
-        It checks if any arguments are passed and sets the corresponding attributes.
+        It checks if any arguments are passed
+        and sets the corresponding attributes.
         If no arguments are provided, it generates a new UUID,
-        sets the created_at and updated_at attributes to the current date and time, respectively.
+        sets the created_at and updated_at
+        attributes to the current date and time, respectively.
         '''
         if kwargs:
             for key, value in kwargs.items():

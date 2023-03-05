@@ -17,7 +17,8 @@ import shlex
 class HBNBCommand(cmd.Cmd):
     """class hbnb console command"""
     prompt = "(hbnb) "
-    lista_class = ["BaseModel", "User", "State", "City", "Amenity", "Place", "Review"]
+    lista_class = ["BaseModel", "User", "State",
+                   "City", "Amenity", "Place", "Review"]
     instance = None
 
     def do_quit(self, line):
