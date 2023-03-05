@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-"""Console module"""
-
-import cmd
+""" module console.py"""
+import json
 import cmd
 from models.base_model import BaseModel
-from models.__init__ import storage
-from models.engine.file_storage import FileStorage
 from models.user import User
-from models.place import Place
 from models.state import State
-from models.city import City
-from models.amenity import Amenity
 from models.review import Review
-
+from models.amenity import Amenity
+from models.place import Place
+from models.city import City
+from models import storage
+import models
+import shlex
 
 
 class HBNBCommand(cmd.Cmd):
