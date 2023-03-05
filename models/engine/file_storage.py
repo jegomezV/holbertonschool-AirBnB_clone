@@ -38,13 +38,16 @@ class FileStorage:
         private:
             - __file_path
             - __objects
-    """ 
+    """
     __file_path = "file.json"
     __objects = {}
     """
-    -The string "file.json" is used as the default filename for storing serialized objects in JSON format.
+    -The string "file.json" is used
+    as the default filename
     for storing serialized objects in JSON format.
-    The file is specific to the application and allows easy identification of the stored objects.
+    for storing serialized objects in JSON format.
+    The file is specific to the application and allows
+    easy identification of the stored objects.
     """
     def all(self):
         """
@@ -74,7 +77,7 @@ class FileStorage:
             json.dump(dic, f)
 
     def reload(self):
-        """ 
+        """
         -Deserialize the file json
         with load y and returns to make
         a update with all objects
