@@ -120,7 +120,7 @@ class HBNBCommand(cmd.Cmd):
             if key in all_objs:
                 object1 = all_objs.get(key)
                 word = string1[3]
-                if string[3].isdigit() and word[0] is not '"':
+                if string[3].isdigit() and word[0] != '"':
                     setattr(object1, string[2], eval(string[3]))
                 else:
                     setattr(object1, string[2], string[3])
