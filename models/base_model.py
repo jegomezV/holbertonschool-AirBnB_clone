@@ -19,7 +19,8 @@ class BaseModel:
     The BaseModel methods return the instance of itself,
     already with the instance attributes set,
     and then convert it to Json format.
-    The final result would be an instance that prints,and stored in json format:
+    The final result would be an instance that prints,
+    and stored in json format:
     "[<<class name>] (<instance.id>) <attr.dict>".
     --------------------------------------------->
 
@@ -38,7 +39,8 @@ class BaseModel:
     '''
     def __init__(self, *args, **kwargs):
         '''
-        -The __init__ method instantiates a new object of the BaseModel class.
+        -The __init__ method
+        instantiates a new object of the BaseModel class.
         It checks if any arguments are passed and sets the corresponding attributes.
         If no arguments are provided, it generates a new UUID,
         sets the created_at and updated_at attributes to the current date and time, respectively.
