@@ -21,8 +21,10 @@ class FileStorage:
     """
     FileStorage Class ->
 
-    -This class allows us to open a dictionary with "all" thanks to its own method.
-    It is also in charge of the serialization and deserialization of the created instances,
+    -This class allows us to open a dictionary
+    with "all" thanks to its own method.
+    It is also in charge of the
+    serialization and deserialization of the created instances,
     which inherit the attributes of the "BaseModel" class in Json format.
     --------------------------------------------->
 
