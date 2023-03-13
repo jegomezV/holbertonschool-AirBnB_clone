@@ -47,7 +47,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class name missing **")
 
     def do_show(self, line):
-        """show whith name a id"""
+        """show id"""
         string = line.split()
         all_objs = models.storage.all()
         if len(line) > 0:
@@ -64,6 +64,23 @@ class HBNBCommand(cmd.Cmd):
                 print("** class doesn't exist **")
         else:
             print("** class name missing **")
+
+    # def do_show2(self, line):
+    #     """show id"""
+    #     string = line.split()
+    #     all_objs = models.storage.all()
+    #     if len(line) > 0:
+    #         if string[0] in HBNBCommand.lista_class:
+    #             if len(string) > 1:
+    #                 for k in all_objs:
+    #                     if "User" in k and (all_objs[k]).id[1] == string[2]:
+    #                         print(all_objs[k])
+    #             else:
+    #                 print("** instance id missing **00")
+    #         else:
+    #             print("** class doesn't exist **")
+    #     else:
+    #         print("** class name missing **")
 
     def do_destroy(self, line):
         """delete a instance in file json"""
@@ -128,6 +145,7 @@ class HBNBCommand(cmd.Cmd):
                 models.storage.save()
             else:
                 print("** no instance found **")
+
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
